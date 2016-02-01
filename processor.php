@@ -1,4 +1,12 @@
 <?php
+	
+	$path = $_FILES['file']['name'];
+	$ext = pathinfo($path, PATHINFO_EXTENSION);
+	if($ext != 'csv')
+	{
+		header('Location: /index.php?file-error=true');
+		die;
+	}
 
 	// get the contents of the text file and put it into an array
 	$file = file_get_contents($_FILES['file']['tmp_name']);
