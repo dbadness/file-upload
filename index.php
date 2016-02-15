@@ -22,5 +22,6 @@
 			<input type='file' name='file'><br><br>
 			<input type='submit' value='Generate Messages!'>
 		</form>
+		<br><br><a href='http://mailsy.dev'>Mailsy Dev</a>
 	</body>
 </html>
